@@ -1,0 +1,114 @@
+html, body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #08088A; 
+    padding: 20px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #08088A; /* Azul escuro */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto; /* Empurra o footer para o final */
+}
+
+/* Aqui acaba o css do header e do footer */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.contact-block {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 70%;
+    height: 80vh;
+}
+
+.contact-photo, .contact-info {
+    width: 50%; /* Dividindo igualmente as metades */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-photo img {
+    width: 550px; /* Fixando a largura */
+    height: 550px; /* Fixando a altura para ser quadrada */
+    object-fit: cover;
+    border-radius: 8px; /* Ajuste de bordas */
+}
+
+.contact-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-info h2 {
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.contact-info ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #08088A; /* Azul escuro */
+    font-weight: bold;
+}
+
+.contact-info ul li a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
