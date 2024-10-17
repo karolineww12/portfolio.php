@@ -3,7 +3,7 @@ require '../includes/header.php';
 ?>
 <main>
     <section class="contact-container">
-        <div class="contact-block">
+    <div class="contact-block animate__animated animate__fadeInLeftBig">
             <div class="contact-photo">
                 <img src="../images/minha_foto.jpg" alt="Minha Foto">
             </div>
@@ -21,3 +21,4 @@ require '../includes/header.php';
 <?php
 require '../includes/footer.php'; 
 ?>
+

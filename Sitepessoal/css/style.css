@@ -1,8 +1,9 @@
 html, body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto Mono', monospace;
     height: 100%;
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
 
 main {
@@ -15,7 +16,7 @@ body {
 }
 
 header {
-    background-color: #08088A; 
+    background-color: #290a5a;
     padding: 20px 0;
 }
 
@@ -32,52 +33,58 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 footer {
-    background-color: #08088A; /* Azul escuro */
-    color: white;
+    background-color: #290a5a;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px 0;
     width: 100%;
-    margin-top: auto; /* Empurra o footer para o final */
+    margin-top: auto;
 }
-
-/* Aqui acaba o css do header e do footer */
 
 .contact-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #dddada;
+    
 }
 
 .contact-block {
     display: flex;
     flex-direction: row;
-    background: white;
+    background: rgb(255, 255, 255);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 70%;
     height: 80vh;
+    border: 5px solid transparent;
 }
 
+.contact-block1 {
+    display: flex;
+    justify-content: center;
+}
+
+
 .contact-photo, .contact-info {
-    width: 50%; /* Dividindo igualmente as metades */
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .contact-photo img {
-    width: 550px; /* Fixando a largura */
-    height: 550px; /* Fixando a altura para ser quadrada */
+    width: 550px;
+    height: 550px;
     object-fit: cover;
-    border-radius: 8px; /* Ajuste de bordas */
+    border-radius: 8px;
 }
 
 .contact-info {
@@ -86,6 +93,7 @@ footer {
     flex-direction: column;
     justify-content: center;
 }
+
 .contact-info h2 {
     margin-bottom: 20px;
 }
@@ -103,7 +111,7 @@ footer {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #08088A; /* Azul escuro */
+    color: #250d33;
     font-weight: bold;
 }
 
@@ -111,4 +119,44 @@ footer {
     width: 24px;
     height: 24px;
     margin-right: 10px;
+}
+
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #dddada;
+    width: 100%;
+}
+
+.about-block {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 60px;
+    width: 80%; /* Ajuste conforme necessário */
+    max-width: 1000px; /* Ajuste conforme necessário */
+    text-align: center;
+}
+
+.about-block h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-block p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.about-block ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-block ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
 }
